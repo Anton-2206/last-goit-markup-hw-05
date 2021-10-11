@@ -263,6 +263,28 @@ bottom: -1px;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
 }
+.skills-top-wrapper{
+  position: relative;
+  
+}
+.skills-top-text{
+    position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+align-items: center;
+justify-content: center;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: bold;
+font-size: 14px;
+line-height: calc(14 / 16);
+text-align: center;
+text-transform: uppercase;
+color: rgba(255, 255, 255, 1);
+}
 /*--------- team------ */
 .team {
   background-color: #f5f4fa;
@@ -414,6 +436,8 @@ line-height: calc(16 / 14)
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #ffffff;
+padding-top: 12px;
+margin-bottom: 20px;
 }
 .footer-list{
   margin-right: 70px;
@@ -421,8 +445,13 @@ color: #ffffff;
 .footer-icon{
   background-color:rgba(255, 255, 255, 0.1);
 }
+.footer-addres{
+  width: 301px;
+  margin-right: 70px;
+}
 /*--------- portfolio------ */
 /*--------- filter------ */
+
 .filter-top-wrapper{
   position: relative;
   overflow: hidden;
@@ -482,19 +511,15 @@ color: #ffffff;
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
-}
+  transition: box-shadow 250ms ease-in-out;
+  }
 .filter-btn:hover,
 .filter-btn:focus {
-  color: #212121;
-  background-color: #f5f4fa;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.filter-btn:hover,
-.filter-btn:focus {
-  cursor: pointer;
   color: #ffffff;
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .filter-about-title {
   font-weight: 700;
   font-size: 18px;
@@ -510,7 +535,8 @@ color: #ffffff;
 }
 .about-link{
   display: block;
-}
+  transition: box-shadow 250ms ease-in-out;
+  }
 .about-link:focus,
 .about-link:hover{
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 
@@ -524,7 +550,7 @@ color: #ffffff;
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color:rgba(142, 0, 0, 0.2);
+  background-color:rgba(0, 0, 0, 0.25);
   top:0;
   transition: opacity 250ms ease-in-out, 
   visibility 250ms ease-in-out;
@@ -545,7 +571,6 @@ color: #ffffff;
   border-radius: 10px;
   transform: scale(1);
   transition: transform 250ms ease;
- 
 }
 .close-btn{
   position: absolute;
@@ -556,5 +581,8 @@ color: #ffffff;
   width: 30px;
   height: 30px;
   border: 1px solid #999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
